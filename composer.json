@@ -1,0 +1,17 @@
+{
+  "name": "govtnz/userforms-hiddenfield",
+  "description": "Adds an hidden field to silverstripe/userforms",
+  "type": "silverstripe-module",
+  "keywords": ["silverstripe", "userforms", "hidden field"],
+  "authors": [
+    {
+      "name": "Juan van den Anker",
+      "email": "juan@vdanker.net"
+    }
+  ],
+  "require": {
+    "silverstripe/framework": "~3.1",
+    "silverstripe/userforms": "*"
+  },
+  "minimum-stability": "dev"
+}

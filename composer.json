@@ -11,11 +11,6 @@
         "silverstripe/framework": "^4",
         "silverstripe/userforms": "*"
     },
-    "extra": {
-        "expose": [
-            "javascript"
-        ]
-    },
     "scripts": {
         "remove-uses": "php-cs-fixer fix src/ --rules=no_unused_imports",
         "lint": "phpcs --extensions=php src/",

@@ -1,17 +1,34 @@
 {
-  "name": "govtnz/userforms-hiddenfield",
-  "description": "Adds an hidden field to silverstripe/userforms",
-  "type": "silverstripe-module",
-  "keywords": ["silverstripe", "userforms", "hidden field"],
-  "authors": [
-    {
-      "name": "Juan van den Anker",
-      "email": "juan@vdanker.net"
-    }
-  ],
-  "require": {
-    "silverstripe/framework": "~3.1",
-    "silverstripe/userforms": "*"
-  },
-  "minimum-stability": "dev"
+    "name": "govtnz/silverstripe-userforms-hiddenfield",
+    "description": "Adds an HiddenField to silverstripe/userforms",
+    "type": "silverstripe-vendormodule",
+    "keywords": ["silverstripe", "userforms", "HiddenField"],
+    "authors": [{
+        "name": "Juan van den Anker",
+        "email": "juan@vdanker.net"
+    }],
+    "require": {
+        "silverstripe/framework": "^4",
+        "silverstripe/userforms": "*"
+    },
+    "extra": {
+        "expose": [
+            "javascript"
+        ]
+    },
+    "scripts": {
+        "remove-uses": "php-cs-fixer fix src/ --rules=no_unused_imports",
+        "lint": "phpcs --extensions=php src/",
+        "syntax-check": "find src/",
+        "lint-clean": "phpcbf src/"
+    },
+    "autoload": {
+        "psr-4": {
+            "GovtNZ\\SilverStripe\\UserForms\\": "src"
+        }
+    },
+    "branch-alias": {
+        "dev-master": "1.x-dev"
+    },
+    "minimum-stability": "dev"
 }

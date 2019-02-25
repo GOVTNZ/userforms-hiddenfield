@@ -1,6 +1,11 @@
 <?php
 
-class EditableHiddenField extends EditableFormField {
+namespace GovtNZ\SilverStripe\UserForms;
+
+use SilverStripe\Forms\HiddenField;
+
+class EditableHiddenField extends EditableFormField
+{
 
     private static $singular_name = 'Hidden Field';
 

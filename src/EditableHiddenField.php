@@ -3,6 +3,7 @@
 namespace GovtNZ\SilverStripe\UserForms;
 
 use SilverStripe\Forms\HiddenField;
+use SilverStripe\UserForms\Model\EditableFormField;
 
 class EditableHiddenField extends EditableFormField
 {

@@ -28,7 +28,8 @@ class EditableHiddenField extends EditableFormField
     {
         $field = HiddenField::create(
             $this->Name,
-            $this->EscapedTitle)
+            $this->EscapedTitle
+        )
             ->setFieldHolderTemplate('UserFormsField_holder')
             ->setTemplate('HiddenField');
 
@@ -36,5 +37,4 @@ class EditableHiddenField extends EditableFormField
 
         return $field;
     }
-
 }
